@@ -1,3 +1,25 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+@layer components {
+  .line {
+    @apply py-0.5;
+  }
+
+  .line:hover {
+    @apply bg-purple-500/10;
+  }
+}
+
+@keyframes gradient {
+  0% {
+    background-position: 0% 50%;
+}
+  50% {
+    background-position: 100% 50%;
+}
+  100% {
+    background-position: 0% 50%;
+}
+}

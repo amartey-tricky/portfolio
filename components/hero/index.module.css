@@ -1,0 +1,85 @@
+.hero {
+  @apply relative
+  flex
+  items-center
+  min-h-screen
+  bg-gradient-to-br
+  from-gray-900
+  via-purple-900
+  to-gray-900;
+}
+
+.animated_container {
+  @apply absolute
+  inset-0
+  overflow-hidden;
+}
+
+.animated_element1 {
+  @apply absolute
+  w-96
+  h-96
+  -top-48
+  -left-48
+  bg-purple-500/20
+  rounded-full
+  blur-3xl;
+}
+
+.animated_element2 {
+  @apply absolute
+  w-96
+  h-96
+  -right-48
+  -bottom-48
+  bg-purple-700/20
+  rounded-full
+  blur-3xl;
+}
+
+.grid_pattern {
+  @apply absolute
+  inset-0
+  bg-[linear-gradient(rgba(255,255,255,0.02)_1px,transparent_1px),linear-gradient(90deg,rgba(255,255,255,0.02)_1px,transparent_1px)]
+  bg-[size:4rem_4rem]
+  [mask-image:radial-gradient(ellipse_80%_50%_at_50%_0%,#000_70%,transparent_110%)];
+}
+
+.grid_container {
+  @apply container
+  mx-auto
+  px-4
+  z-10;
+}
+
+.grid_motion {
+  @apply grid
+  grid-cols-1
+  lg:grid-cols-2
+  gap-12
+  items-center;
+}
+
+.hero_content {
+  @apply space-y-2;
+}
+
+.hero_intro {
+  @apply text-purple-400
+  font-mono;
+}
+
+.hero_name {
+  @apply text-5xl
+  md:text-7xl
+  font-bold
+  text-white
+  mt-2;
+}
+
+.hero_title {
+  @apply text-2xl
+  md:text-3xl
+  text-purple-200
+  mt-2;
+}
