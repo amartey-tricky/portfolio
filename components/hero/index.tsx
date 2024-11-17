@@ -1,9 +1,9 @@
 "use client";
 
-import styles from "./index.module.css";
-import Link from "next/link";
 import { motion } from "framer-motion";
-import { Github, Linkedin, Code2, ExternalLink } from "lucide-react";
+import { Code2, ExternalLink, Github, Linkedin } from "lucide-react";
+import Link from "next/link";
+import styles from "./index.module.css";
 
 const codeSnippet = `
 function Developer() {
@@ -22,8 +22,8 @@ const containerVariants = {
     transition: {
       staggerChildren: 0.2,
       delayChildren: 0.3,
-    }
-  }
+    },
+  },
 };
 
 const itemVariants = {
@@ -31,8 +31,8 @@ const itemVariants = {
   visible: {
     opacity: 1,
     y: 0,
-    transition: { duration: 0.5 }
-  }
+    transition: { duration: 0.5 },
+  },
 };
 
 const codeVariants = {
@@ -40,8 +40,8 @@ const codeVariants = {
   visible: {
     opacity: 1,
     x: 0,
-    transition: { duration: 0.6, delay: 0.6 }
-  }
+    transition: { duration: 0.6, delay: 0.6 },
+  },
 };
 
 export function Hero() {
@@ -66,23 +66,14 @@ export function Hero() {
           <div className={styles.hero_content}>
             <motion.div variants={itemVariants}>
               <span className={styles.hero_intro}>Hello, I'm</span>
-              <h1 className={styles.hero_name}>
-                Patrick Annang
-              </h1>
-              <h2 className={styles.hero_title}>
-                Front-End Developer
-              </h2>
+              <h1 className={styles.hero_name}>Patrick Annang</h1>
+              <h2 className={styles.hero_title}>Front-End Developer</h2>
             </motion.div>
-            <motion.p 
-              variants={itemVariants}
-              className={styles.hero_about}
-            >
-              I craft responsive websites where technology meets creativity. Building beautiful web experiences with modern technologies.
+            <motion.p variants={itemVariants} className={styles.hero_about}>
+              I craft responsive websites where technology meets creativity.
+              Building beautiful web experiences with modern technologies.
             </motion.p>
-            <motion.div 
-              variants={itemVariants}
-              className={styles.hero_button}
-            >
+            <motion.div variants={itemVariants} className={styles.hero_button}>
               <button className={styles.hero_button_a} type="button">
                 <Code2 size={20} />
                 View Projects
@@ -92,10 +83,7 @@ export function Hero() {
                 Contact Me
               </button>
             </motion.div>
-            <motion.div 
-              variants={itemVariants}
-              className={styles.hero_social}
-            >
+            <motion.div variants={itemVariants} className={styles.hero_social}>
               <Link href="#" className={styles.hero_social_icon}>
                 <Github size={24} />
               </Link>
@@ -105,10 +93,7 @@ export function Hero() {
             </motion.div>
           </div>
           {/* Right Column - Code Preview */}
-          <motion.div
-            variants={codeVariants}
-            className={styles.code_snippet}
-          >
+          <motion.div variants={codeVariants} className={styles.code_snippet}>
             <div className={styles.code_icon_container}>
               <div className={styles.code_icon_red} />
               <div className={styles.code_icon_yellow} />
@@ -116,7 +101,7 @@ export function Hero() {
             </div>
             <pre className="font-mono text-sm">
               <code className="text-purple-300">
-                {codeSnippet.split('\n').map((line, i) => (
+                {codeSnippet.split("\n").map((line, i) => (
                   <div key={i} className="line">
                     {line}
                   </div>

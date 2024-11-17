@@ -1,7 +1,6 @@
+import { Github, Linkedin, Mail, Twitter } from "lucide-react";
 import Link from "next/link";
-import { Github, Linkedin, Twitter, Mail } from "lucide-react";
 import styles from "./index.module.css";
-
 
 const socialLinks = [
   {
@@ -23,8 +22,8 @@ const socialLinks = [
     title: "Email",
     link: "mailto:patrickannan23@gmail.com",
     icon: <Mail className={styles.social_icon} />,
-  }
-]
+  },
+];
 
 export function Footer() {
   return (
@@ -32,15 +31,24 @@ export function Footer() {
       <div className={styles.footer_container}>
         {/* Copyright */}
         <div className={styles.copyright}>
-          &copy; {new Date().getFullYear()} Patrick's Portfolio • All rights reserved
+          &copy; {new Date().getFullYear()} Patrick's Portfolio • All rights
+          reserved
         </div>
         {/* Social Links */}
         <div className={styles.social_links}>
           {socialLinks.map((item) => (
-            <Link key={item.title} href={item.link} target="_blank" rel="noopener noreferrer" className={styles.social_icons}>{item.icon}</Link>
+            <Link
+              key={item.title}
+              href={item.link}
+              target="_blank"
+              rel="noopener noreferrer"
+              className={styles.social_icons}
+            >
+              {item.icon}
+            </Link>
           ))}
         </div>
       </div>
     </footer>
-  )
+  );
 }

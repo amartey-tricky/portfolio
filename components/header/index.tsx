@@ -1,9 +1,9 @@
 "use client";
 
-import { useState } from "react";
+import { Menu, X } from "lucide-react";
 import Link from "next/link";
 import { usePathname } from "next/navigation";
-import { Menu, X } from "lucide-react";
+import { useState } from "react";
 import styles from "./index.module.css";
 
 interface MenuItem {
@@ -17,7 +17,7 @@ const menuItems: MenuItem[] = [
   { title: "About", href: "/about", index: 1 },
   { title: "Projects", href: "/projects", index: 2 },
   { title: "Contact", href: "/contact", index: 3 },
-]
+];
 
 export function Header() {
   const [isOpen, setIsOpen] = useState(false);
@@ -26,7 +26,7 @@ export function Header() {
   const pathname = usePathname();
   const activeItem = (path: string): boolean => {
     return pathname === path;
-  }
+  };
 
   return (
     <header className={styles.header}>
@@ -42,19 +42,32 @@ export function Header() {
             {/*  DesktopMenu */}
             <div className={styles.desktop_menu}>
               {menuItems.map((item) => (
-                <Link key={item.title} href={item.href} className={`${styles.menu_link} ${activeItem(item.href) ? styles.active : styles.inactive}`}>
+                <Link
+                  key={item.title}
+                  href={item.href}
+                  className={`${styles.menu_link} ${activeItem(item.href) ? styles.active : styles.inactive}`}
+                >
                   {item.title}
-                  </Link>
+                </Link>
               ))}
             </div>
             {/* MobileMenu */}
             <div className={styles.mobile_menu}>
-              <button type="button" onClick={toggleMenu} className={styles.mobile_button} aria-label="Toggle Menu">
+              <button
+                type="button"
+                onClick={toggleMenu}
+                className={styles.mobile_button}
+                aria-label="Toggle Menu"
+              >
                 <div className={styles.mobile_button_icon}>
-                  <div className={`${styles.menu_icon} ${isOpen ? styles.menu_open : styles.menu_closed}`}>
+                  <div
+                    className={`${styles.menu_icon} ${isOpen ? styles.menu_open : styles.menu_closed}`}
+                  >
                     <Menu size={20} />
                   </div>
-                  <div className={`${styles.menu_icon} ${isOpen ? styles.x_closed : styles.x_open}`}>
+                  <div
+                    className={`${styles.menu_icon} ${isOpen ? styles.x_closed : styles.x_open}`}
+                  >
                     <X size={20} />
                   </div>
                 </div>
@@ -62,14 +75,24 @@ export function Header() {
             </div>
           </div>
           {/* MobileMenu */}
-          <div className={`${styles.mobile_nav} ${isOpen ? styles.open : styles.closed}`}>
-            <div className={`$styles.mobile_menu_box ${isOpen ? styles.animation_open : styles.animation_closed}`}>
+          <div
+            className={`${styles.mobile_nav} ${isOpen ? styles.open : styles.closed}`}
+          >
+            <div
+              className={`$styles.mobile_menu_box ${isOpen ? styles.animation_open : styles.animation_closed}`}
+            >
               {menuItems.map((item, index) => (
-                <Link key={item.title} href={item.href} className={`${styles.mobile_link} ${activeItem(item.href) ? styles.link_active : styles.link_inactive} ${index === 0 ? "rounded-b-2xl" : ""} ${index === menuItems.length - 1 ? 'rounded-b-2xl' : ''}`} onClick={toggleMenu} style={{
-                  transform: isOpen ? 'translateX(0)' : 'translateX(-100%)',
-                  opacity: isOpen ? 1 : 0,
-                  transitionDelay: `${index * 75}ms`
-                }}>
+                <Link
+                  key={item.title}
+                  href={item.href}
+                  className={`${styles.mobile_link} ${activeItem(item.href) ? styles.link_active : styles.link_inactive} ${index === 0 ? "rounded-b-2xl" : ""} ${index === menuItems.length - 1 ? "rounded-b-2xl" : ""}`}
+                  onClick={toggleMenu}
+                  style={{
+                    transform: isOpen ? "translateX(0)" : "translateX(-100%)",
+                    opacity: isOpen ? 1 : 0,
+                    transitionDelay: `${index * 75}ms`,
+                  }}
+                >
                   {item.title}
                 </Link>
               ))}
@@ -78,5 +101,5 @@ export function Header() {
         </nav>
       </div>
     </header>
-  )
+  );
 }
