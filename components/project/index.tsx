@@ -28,13 +28,37 @@ const itemVariants = {
 
 const projects = [
   {
-    title: 'E-commerce Platform',
-    description: 'A modern e-commerce platform built with Next.js and Tailwind CSS, featuring real-time inventory management and seamless checkout experience.',
-    image: '/api/placeholder/600/400',
-    tags: ['Next.js', 'TypeScript', 'Tailwind CSS', 'Stripe'],
-    liveUrl: 'https://example.com',
-    githubUrl: 'https://github.com/example/project',
+    title: "BuildBot GH",
+    description: "A web app for buildbot GH to allow users refer prospective customers for a commission.",
+    image: "https://utfs.io/f/dWqeLnw5zWnM2C45Doke1htkBH4KoIJ6zDxwsuam5PFyqlvY",
+    tags: ["Nextjs", "TypeScript", "Tailwind CSS", "PostgreSQL", "Drizzle", "Zod", "React Hook Form", "React Query", "Vercel"],
+    liveUrl: "https://buildbotgh.com",
+    githubUrl: "https://github.com/amartech/buildbot-gh",
     featured: true
+  },
+  {
+    title: "VheeWorld Foundation",
+    description: "A website for VheeWorld Foundation to spread their outreach and also accept donations from potential donors.",
+    image: "https://utfs.io/f/dWqeLnw5zWnMI9yud6Wtbz6fqO7L2XYx8iF9scgVldWn5BZE",
+    tags: ["Nextjs", "typescript", "Tailwind CSS", "PayStack", "Zod", "React Hook Form", "Vercel"],
+    liveUrl: "https://vheeworld.org",
+    githubUrl: "https://github.com/amartey-tricky/vhee"
+  },
+  {
+    title: "Mr Ampadu Portfolio",
+    description: "A porfolio website for Mr. Ampadu, an administrotor of a small business.",
+    image: "https://utfs.io/f/dWqeLnw5zWnMdxtkWaw5zWnMkorTJ3NhZvUSb7uDp0RLf6ls",
+    tags: ["Astro", "TypeScript", "Tailwind CSS", "Vercel"],
+    liveUrl: "https://mrampadu.com",
+    githubUrl: "https://github.com/amartey-tricky/mr-ampadu"
+  },
+  {
+    title: "Dr Togobo Portfolio",
+    description: "A porfolio website for Dr. Togobo, a medical doctor.",
+    image: "https://utfs.io/f/dWqeLnw5zWnMdxtkWaw5zWnMkorTJ3NhZvUSb7uDp0RLf6ls",
+    tags: ["Nextjs", "TypeScript", "Tailwind CSS", "Vercel"],
+    liveUrl: "https://ambrosetogobo.com",
+    githubUrl: "https://github.com/amartey-tricky/togobo"
   }
 ];
 

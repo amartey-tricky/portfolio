@@ -82,6 +82,10 @@ const technologies = [
     items: ["React", "Next.js", "TypeScript", "Tailwind CSS", "StoryBook"],
   },
   {
+    category: "Mobile",
+    items: ["React Native", "Expo"],
+  },
+  {
     category: "State Management",
     items: ["Zustand", "React Query"],
   },
@@ -256,30 +260,9 @@ export function About() {
                 />
                 <article>
                   <h3 className="text-lg font-medium text-white">
-                    Senior Frontend Developer
-                  </h3>
-                  <time className="text-purple-400">2022 - Present</time>
-                  <p className="text-gray-300 mt-2">
-                    Leading frontend development for enterprise applications,
-                    mentoring junior developers, and implementing best practices
-                    for scalable architecture.
-                  </p>
-                </article>
-              </motion.li>
-
-              <motion.li
-                variants={itemVariants}
-                className="relative pl-8 border-l-2 border-purple-600"
-              >
-                <div
-                  className="absolute w-4 h-4 bg-purple-600 rounded-full -left-[9px] top-0"
-                  aria-hidden="true"
-                />
-                <article>
-                  <h3 className="text-lg font-medium text-white">
                     Frontend Developer
                   </h3>
-                  <time className="text-purple-400">2019 - 2022</time>
+                  <time className="text-purple-400">2022 - Present</time>
                   <p className="text-gray-300 mt-2">
                     Developed and maintained multiple React applications,
                     implemented responsive designs, and collaborated with UX
@@ -300,7 +283,7 @@ export function About() {
                   <h3 className="text-lg font-medium text-white">
                     Junior Developer
                   </h3>
-                  <time className="text-purple-400">2017 - 2019</time>
+                  <time className="text-purple-400">2020 - 2022</time>
                   <p className="text-gray-300 mt-2">
                     Started my journey in web development, working on various
                     projects and learning fundamental technologies and best
