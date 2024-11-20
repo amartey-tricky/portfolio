@@ -55,7 +55,7 @@ const projects = [
   {
     title: "Dr Togobo Portfolio",
     description: "A porfolio website for Dr. Togobo, a medical doctor.",
-    image: "https://utfs.io/f/dWqeLnw5zWnMdxtkWaw5zWnMkorTJ3NhZvUSb7uDp0RLf6ls",
+    image: "https://utfs.io/f/dWqeLnw5zWnMltcJ3WbLRDXkJfcZSumHT7MsUby8E9GjAnC4",
     tags: ["Nextjs", "TypeScript", "Tailwind CSS", "Vercel"],
     liveUrl: "https://ambrosetogobo.com",
     githubUrl: "https://github.com/amartey-tricky/togobo"
