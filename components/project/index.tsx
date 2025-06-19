@@ -28,19 +28,28 @@ const itemVariants = {
 
 const projects = [
   {
+    title: "Yendaakye Job Center",
+    description: "A web app for a job center that posts jobs and allows users to apply",
+    image: "https://utfs.io/f/dWqeLnw5zWnMKrmT5FP4lNwQDeWPyZmStxBUibTqIp8kv1r2",
+    tags: ["Nextjs", "Typescript", "Tailwincss", "PostgreSQL", "Drizzle", "Zod", "Vercel", "React Hook Form", "Supabase"],
+    liveUrl: "https://yendaakyejobcenter.com",
+    githubUrl: "https://github.com/c-distin/yen",
+    featured: true
+  },
+  {
     title: "BuildBot GH",
     description: "A web app for buildbot GH to allow users refer prospective customers for a commission.",
     image: "https://utfs.io/f/dWqeLnw5zWnM2C45Doke1htkBH4KoIJ6zDxwsuam5PFyqlvY",
     tags: ["Nextjs", "TypeScript", "Tailwind CSS", "PostgreSQL", "Drizzle", "Zod", "React Hook Form", "React Query", "Vercel"],
     liveUrl: "https://buildbotgh.com",
-    githubUrl: "https://github.com/amartech/buildbot-gh",
+    githubUrl: "https://github.com/amartey-tricky/buildbot-gh",
     featured: true
   },
   {
     title: "VheeWorld Foundation",
     description: "A website for VheeWorld Foundation to spread their outreach and also accept donations from potential donors.",
     image: "https://utfs.io/f/dWqeLnw5zWnMI9yud6Wtbz6fqO7L2XYx8iF9scgVldWn5BZE",
-    tags: ["Nextjs", "typescript", "Tailwind CSS", "PayStack", "Zod", "React Hook Form", "Vercel"],
+    tags: ["Nextjs", "Typescript", "Tailwind CSS", "PayStack", "Zod", "React Hook Form", "Vercel"],
     liveUrl: "https://vheeworld.org",
     githubUrl: "https://github.com/amartey-tricky/vhee"
   },
